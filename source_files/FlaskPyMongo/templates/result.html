@@ -1,0 +1,8 @@
+<html>
+   <body>
+         {% for record in  mongo.db.errtab %}
+            <h3>{{record["cause"]}}</h3>
+            <h3>{{record["solution"]}}</h3>
+         {% endfor %}
+   </body>
+</html>
